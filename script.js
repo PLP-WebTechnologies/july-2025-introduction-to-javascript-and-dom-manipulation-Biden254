@@ -1,3 +1,6 @@
+// =========================================
+// 🎯 PART 1: JavaScript Basics (Variables, Conditionals, Operators)
+// =========================================
 const usernameInput = document.getElementById("username");
 const budgetInput = document.getElementById("budget");
 const welcomeMessage = document.getElementById("welcomeMessage");
@@ -20,6 +23,10 @@ document.getElementById("saveUserBtn").addEventListener("click", () => {
     welcomeMessage.textContent = `👋 Welcome, ${username}! Your budget is $${budget}.`;
 });
 
+// =========================================
+// ❤️ PART 2: JavaScript Functions — Reusability
+// =========================================
+
 // Function to calculate total cost
 function calculateTotal() {
     let total = 0;
@@ -39,6 +46,9 @@ function updateBudgetStatus() {
     }
 }
 
+// =========================================
+// 🔁 PART 3: JavaScript Loops — Repetition
+// =========================================
 const shoppingListElement = document.getElementById("shoppingList");
 const totalCostElement = document.getElementById("totalCost");
 
@@ -72,6 +82,9 @@ function renderShoppingList() {
     updateBudgetStatus();
 }
 
+// =========================================
+// 🌐 PART 4: DOM Manipulation
+// =========================================
 document.getElementById("clearListBtn").addEventListener("click", () => {
     shoppingList = [];
     renderShoppingList();
