@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Shopping Assistant</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Smart Shopping Assistant</h1>
+        <p>Manage your shopping list, calculate totals, and interact dynamically!</p>
+    </header>
+
+    <main>
+        <!-- Part 1: Capturing user input -->
+        <section id="user-section">
+            <h2>Enter Your Details</h2>
+            <input type="text" id="username" placeholder="Enter your name" />
+            <input type="number" id="budget" placeholder="Enter your budget" />
+            <button id="saveUserBtn">Save Details</button>
+            <p id="welcomeMessage"></p>
+        </section>
+
+        <!-- Part 2 + Part 3: Adding shopping items -->
+        <section id="shopping-section">
+            <h2>🛒 Your Shopping List</h2>
+            <input type="text" id="itemName" placeholder="Item name" />
+            <input type="number" id="itemPrice" placeholder="Item price" />
+            <button id="addItemBtn">Add Item</button>
+
+            <ul id="shoppingList"></ul>
+            <p id="totalCost">Total Cost: $0</p>
+        </section>
+
+        <!-- Part 4: Interactive buttons -->
+        <section id="controls">
+            <h2>Quick Actions</h2>
+            <button id="clearListBtn">Clear List</button>
+            <button id="toggleThemeBtn">Toggle Dark Mode</button>
+            <p id="budgetStatus"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Loren Biden</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
